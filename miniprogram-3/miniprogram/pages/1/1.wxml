@@ -1,0 +1,19 @@
+<!--pages/news.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/logo.png"  style="width: 100%;" >
+</image>
+<view style="height: 100rpx;">
+
+</view>
+<button type="default" ><navigator url="../2/2" open-type="redirect">点击进入</navigator>
+</button>
+<view style="height: 50rpx;">
+</view>
+

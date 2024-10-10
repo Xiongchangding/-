@@ -1,0 +1,19 @@
+<!--pages/news.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/xinyuu.png"  style="width: 100%;" >
+</image>
+<view style="height: 100rpx;">
+
+</view>
+<button type="default" bind:tap="selectRandomIndexAndSetChosen">开始抽点
+</button>
+<view style="height: 50rpx;">
+</view>
+

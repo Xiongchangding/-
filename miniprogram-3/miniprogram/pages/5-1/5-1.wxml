@@ -1,0 +1,26 @@
+<!--pages/news.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/cuizi.png"  style="width: 100%;" >
+</image>
+<view style="height: 50rpx;">
+虽然，加0.5分
+</view>
+<view>姓名：{{dataobj.name}}</view>
+<view>学号：{{dataobj.xuehao}}</view>
+<view >
+    分数：{{dataobj.score}}
+</view>
+<button type="default"><navigator url="../2/2" open-type="redirect">有请下一位</navigator>
+</button>
+<view style="height: 50rpx;">
+</view>
+<button type="default" ><navigator url="../1/1" open-type="redirect">结束本次点名</navigator> 
+</button>
+

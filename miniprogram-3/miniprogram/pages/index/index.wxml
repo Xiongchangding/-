@@ -1,0 +1,5 @@
+<view>云开发</view>
+<botton bind:tap="test2">ani
+</botton>
+
+<view>  nidsf{{chosen_index2}}</view>

@@ -1,0 +1,31 @@
+<!--pages/news.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/shenpan.jpg"  style="width: 100%;" >
+</image>
+
+<view style="height: 100rpx;">
+
+</view>
+<view>姓名：{{dataobj.name}}</view>
+<view>学号：{{dataobj.xuehao}}</view>
+
+<view>
+    分数：{{dataobj.score}}
+
+</view>
+<view style="height: 100rpx;">
+积分加1但是请重复刚才的问题
+</view>
+<button type="default" bind:tap="updateScoreForIndex_j05">我记得</button>
+<view style="height: 50rpx;">
+</view>
+<button type="default" bind:tap="updateScoreForIndex_jian1">忘了
+</button>
+

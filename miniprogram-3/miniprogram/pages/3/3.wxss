@@ -1,0 +1,6 @@
+/* pages/1/1.wxss */
+.box{
+    width: auto;
+    height: 150rpx;
+    background-color:white;
+}

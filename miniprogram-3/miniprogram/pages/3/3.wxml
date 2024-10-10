@@ -1,0 +1,30 @@
+<!--pages/news.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/shenpan.jpg"  style="width: 100%;" >
+</image>
+
+<view style="height: 100rpx;">
+
+</view>
+<view>姓名：{{dataobj.name}}</view>
+<view>学号：{{dataobj.xuehao}}</view>
+
+<view >
+    分数：{{dataobj.score}}
+
+</view>
+<view style="height: 100rpx;">
+该同学到了吗
+</view>
+<button type="default" bind:tap="updateScoreForIndex_j1">是</button>
+<view style="height: 50rpx;">
+</view>
+<button type="default" bind:tap="updateScoreForIndex_fu1">否</button>
+

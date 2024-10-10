@@ -1,0 +1,33 @@
+<!--pages/4/4.wxml-->
+
+<view class="box">
+   <text>
+   </text>
+</view>
+
+<!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
+<!-- </navigator> -->
+<image src="../../image/shenpan.jpg"  style="width: 100%;" >
+</image>
+<view>姓名：{{dataobj.name}}</view>
+<view>学号：{{dataobj.xuehao}}</view>
+
+<view>
+    分数：{{dataobj.score}}
+
+</view>
+<view style="height: 200rpx;">
+积分加0.5但是请回答这个问题
+</view>
+
+<button type="default" bind:tap="updateScoreForIndex_05">不会，嘴硬</button>
+<view style="height: 50rpx;">
+</view>
+<button type="default" bind:tap="updateScoreForIndex_1">看我操作</button>
+
+<view style="height: 50rpx;">
+</view>
+<button type="default" bind:tap="updateScoreForIndex_2">包会的</button>
+<view style="height: 50rpx;">
+</view>
+<button type="default" bind:tap="updateScoreForIndex_3">恭喜，完美回答</button>
