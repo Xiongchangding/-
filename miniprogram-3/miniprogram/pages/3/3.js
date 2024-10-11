@@ -2,6 +2,7 @@
 const db = wx.cloud.database();
 const app = getApp(); // 获取全局应用实例
 
+
 Page({
   data: {
     dataobj: undefined
@@ -70,7 +71,7 @@ Page({
       // 更新记录中的 score 属性
       await db.collection('demolist').doc(record._id).update({
         data: {
-          score: newScore
+          score:newScore
         }
       });
       

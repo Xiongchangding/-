@@ -34,7 +34,8 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "ignoreUploadUnusedFiles": true
   },
   "appid": "wx1b82b26a362cc917",
   "projectname": "quickstart-wx-cloud",

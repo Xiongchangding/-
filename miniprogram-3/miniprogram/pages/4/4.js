@@ -23,27 +23,76 @@ Page({
           }
       
           const record = data[0];
-          const newScore = record.score + 0.5; // 更新后的 score 值
-          
+          var newScore = record.score ; // 更新后的 score 值
+          const flag = Math.round(Math.random());//生成0和1的随机数，用做判断随机事件
+          console.log(flag);
           // 更新记录中的 score 属性
-          await db.collection('demolist').doc(record._id).update({
-            data: {
-              score: newScore
-            }
+          if(record.score>=10&&flag){
+            const value = Math.round(Math.random());
+            if(value){
+              newScore = newScore *2;//作为上去总结知识点的奖励
+              await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../71/71'
           });
-          
-          console.log(`更新成功，新的 score 值为：${newScore}`);
-          
+            }else{
+              newScore = 0;//中大奖，积分归零
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../72/72'
+          });
+            }
+          }else if(record.score>=-10){
+            newScore = newScore +0.5;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
           // 数据更新成功后隐藏加载动画并跳转
           wx.hideLoading();
           wx.redirectTo({
             url: '../5-1/5-1'
           });
+          }//进入绝境事件，积分翻倍
+          else{
+            newScore = newScore +1;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+                      // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../61/6-1'
+          });
+          }
+
+          
+
         } catch (error) {
           console.error('更新失败:', error);
           wx.hideLoading(); // 如果出错也隐藏加载动画
         }
       },
+
       async updateScoreForIndex_1() {
         try {
           // 显示加载动画
@@ -63,22 +112,69 @@ Page({
           }
       
           const record = data[0];
-          const newScore = record.score + 1; // 更新后的 score 值
-          
+          var newScore = record.score ; // 更新后的 score 值
+          const flag = Math.round(Math.random());//生成0和1的随机数，用做判断随机事件
+          console.log(flag);
           // 更新记录中的 score 属性
-          await db.collection('demolist').doc(record._id).update({
-            data: {
-              score: newScore
-            }
+          if(record.score>=10&&flag){
+            const value = Math.round(Math.random());
+            if(value){
+              newScore = newScore *2;//作为上去总结知识点的奖励
+              await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../71/71'
           });
-          
-          console.log(`更新成功，新的 score 值为：${newScore}`);
-          
+            }else{
+              newScore = 0;//中大奖，积分归零
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../72/72'
+          });
+            }
+          }else if(record.score>=-10){
+            newScore = newScore +1;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
           // 数据更新成功后隐藏加载动画并跳转
           wx.hideLoading();
           wx.redirectTo({
             url: '../52/52'
           });
+          }//进入绝境事件，积分翻倍
+          else{
+            newScore = newScore +2;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+                      // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../62/62'
+          });
+          }
+          
+
         } catch (error) {
           console.error('更新失败:', error);
           wx.hideLoading(); // 如果出错也隐藏加载动画
@@ -103,22 +199,68 @@ Page({
           }
       
           const record = data[0];
-          const newScore = record.score + 2; // 更新后的 score 值
-          
+          var newScore = record.score ; // 更新后的 score 值
+          const flag = Math.round(Math.random());//生成0和1的随机数，用做判断随机事件
+          console.log(flag);
           // 更新记录中的 score 属性
-          await db.collection('demolist').doc(record._id).update({
-            data: {
-              score: newScore
-            }
+          if(record.score>=10&&flag){
+            const value = Math.round(Math.random());
+            if(value){
+              newScore = newScore *2;//作为上去总结知识点的奖励
+              await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../71/71'
           });
-          
-          console.log(`更新成功，新的 score 值为：${newScore}`);
-          
+            }else{
+              newScore = 0;//中大奖，积分归零
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../72/72'
+          });
+            }
+          }else if(record.score>=-10){
+            newScore = newScore +2;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
           // 数据更新成功后隐藏加载动画并跳转
           wx.hideLoading();
           wx.redirectTo({
             url: '../53/53'
           });
+          }//进入绝境事件，积分翻倍
+          else{
+            newScore = newScore +1;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+                      // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../63/63'
+          });
+          }
+          
         } catch (error) {
           console.error('更新失败:', error);
           wx.hideLoading(); // 如果出错也隐藏加载动画
@@ -143,22 +285,67 @@ Page({
           }
       
           const record = data[0];
-          const newScore = record.score + 3; // 更新后的 score 值
-          
+          var newScore = record.score ; // 更新后的 score 值
+          const flag = Math.round(Math.random());//生成0和1的随机数，用做判断随机事件
+          console.log(flag);
           // 更新记录中的 score 属性
-          await db.collection('demolist').doc(record._id).update({
-            data: {
-              score: newScore
-            }
+          if(record.score>=10&&flag){
+            const value = Math.round(Math.random());
+            if(value){
+              newScore = newScore *2;//作为上去总结知识点的奖励
+              await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../71/71'
           });
-          
-          console.log(`更新成功，新的 score 值为：${newScore}`);
-          
+            }else{
+              newScore = 0;//中大奖，积分归零
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+          // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../72/72'
+          });
+            }
+          }else if(record.score>=-10){
+            newScore = newScore +3;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
           // 数据更新成功后隐藏加载动画并跳转
           wx.hideLoading();
           wx.redirectTo({
             url: '../54/54'
           });
+          }//进入绝境事件
+          else{
+            newScore = 0;
+            await db.collection('demolist').doc(record._id).update({
+              data: {
+                score: newScore
+              }
+            });
+            console.log(`更新成功，新的 score 值为：${newScore}`);
+                      // 数据更新成功后隐藏加载动画并跳转
+          wx.hideLoading();
+          wx.redirectTo({
+            url: '../64/64'
+          });
+          }
         } catch (error) {
           console.error('更新失败:', error);
           wx.hideLoading(); // 如果出错也隐藏加载动画

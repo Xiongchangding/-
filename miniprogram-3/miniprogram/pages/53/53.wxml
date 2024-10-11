@@ -10,7 +10,7 @@
 <image src="../../image/cuizi.png"  style="width: 100%;" >
 </image>
 <view style="height: 50rpx;">
-虽然，加2分
+有点瑕疵，加2分
 </view>
 <view>姓名：{{dataobj.name}}</view>
 <view>学号：{{dataobj.xuehao}}</view>

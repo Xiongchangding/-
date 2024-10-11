@@ -70,7 +70,7 @@ Page({
       // 更新记录中的 score 属性
       await db.collection('demolist').doc(record._id).update({
         data: {
-          score: newScore
+          score:newScore
         }
       });
       

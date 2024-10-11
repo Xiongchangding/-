@@ -7,10 +7,10 @@
 
 <!-- <navigator url="../logs/logs" open-type="navigate">点我跳转 -->
 <!-- </navigator> -->
-<image src="../../image/cuizi.png"  style="width: 100%;" >
+<image src="../../image/zhongjiang.png"  style="width: 100%;" >
 </image>
 <view style="height: 50rpx;">
-完美，加3分
+有maybe，积分归零！
 </view>
 <view>姓名：{{dataobj.name}}</view>
 <view>学号：{{dataobj.xuehao}}</view>
