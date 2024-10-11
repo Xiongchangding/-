@@ -50,8 +50,7 @@ Page({
             if (randomWeight <= cumulativeWeight) {
               // 将选中的 index 赋值给 app.js 中的 chosen_index 变量
               getApp().globalData.chosen_index = index_list[i]; 
-            //   getApp().globalData.chosen_index = 0;
-             
+              //getApp().globalData.chosen_index = 25;
               console.log('选中的 index:', index_list[i]);
       
               // 隐藏加载动画
